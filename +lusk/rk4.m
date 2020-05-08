@@ -2,9 +2,9 @@ function y = rk4(y, t, dt, f)
 %RK4 Runge-Kutta 4th Order
 %   Integrates ODE of the form: dy/dt = f(y,t).
 
-if nargin('f') == 1
+if nargin(f) == 1
     h = @(y, t) f(y, 0);
-elseif nargin('f') == 2
+elseif nargin(f) == 2
     h = @(y, t) f(y, t);
 else
     error('f must be of form f(y,t) or f(y)');
