@@ -164,7 +164,7 @@ classdef Q
                 y = ( Ryz + Rzy ) / (4*z);
             end
             
-            obj = Q([ w x y z ]); 
+            obj = lusk.Q([ w x y z ]); 
         end
         
         function obj = fromRPY(R, P, Y)
